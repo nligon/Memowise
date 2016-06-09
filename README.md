@@ -111,6 +111,22 @@ $ npm run watch-client
 ```
 Builds and watches client files for changes. Builds to `dev/`.
 
+### Load Sample Data
+
+From within root directory, import all decks in 'document/decks/':
+
+```sh
+npm run import:all
+```
+
+Optionally, import only one deck at a time. Note: Running both import commands, or running the same import command more than once, will result in repeat document-entries.
+
+```sh
+npm run import math.md
+```
+
+Deck files MUST be within documentation/decks/ directory for data to import successfully.
+
 #### run server (development)
 
 ```sh
