@@ -87,28 +87,28 @@ Import all decks in document/decks/ directory, be careful, it still imports if d
 
 ### Tasks 
 
-#### build
+#### Build
 
 ```sh
 $ npm run build
 ```
 Builds the entire application to `dist/`. See `package.json` to set environment variables.
 
-#### server-prod
+#### Server-prod
 
 ```sh
 $ npm run server-prod
 ```
 Starts the server in production mode. See `package.json` to set environment variables. 
 
-#### watch-server
+#### Watch-server
 
 ```sh
 $ npm run watch-server 
 ```
 Builds and watches server files for changes. Builds to `dev/`.
 
-#### watch-client
+#### Watch-client
 
 ```sh
 $ npm run watch-client
@@ -131,21 +131,21 @@ npm run import math.md
 
 Deck files MUST be within documentation/decks/ directory for data to import successfully.
 
-#### run server (development)
+#### Run server (development)
 
 ```sh
 $ npm run server-dev
 ```
 Starts the server in development mode (runs from `localhost:3000`).
 
-#### test
+#### Test
 
 ```sh
 $ npm run test
 ```
 > **Runs unit tests and coverage report. Ensure `mongod` and the application is built and the server is running.**
 
-#### coverage
+#### cCverage
 
 ```sh
 $ npm run coverage
