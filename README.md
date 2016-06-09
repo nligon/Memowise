@@ -21,6 +21,9 @@
 
 ## Getting Started 
 
+## Installation script
+An automated version of this installation process is available to you. To launch it, run './install' from the root directory.
+
 ### Install Dependencies
 
 From within the root directory:
