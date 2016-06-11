@@ -8,6 +8,7 @@ import {
   SIGN_IN,
   SIGN_OUT,
   ERR_FAILED_REQUEST,
+  UPDATEINPUT,
 } from '../constants/actionTypes';
 
 import {
@@ -95,5 +96,16 @@ export const error = (state, action) => {
     }
     default:
       return state || {};
+  }
+};
+
+export const searchinput = (state, action) => {
+  switch (action.type) {
+    case UPDATEINPUT: {
+      console.log("searchinput! state:", state, "action:", action, "action.type:", action.type);
+      return action.data;
+    }
+    default:
+    return state || '';
   }
 };

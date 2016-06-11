@@ -1,19 +1,16 @@
 import React, { PropTypes } from 'react';
+import Reducers from '../reducers/index';
 
-class Search extends React.Component {
+// const Decks = ({ decks, handleChange, searchinput }) => (
+
+// class Search extends React.Component {
   
-  render() {
-    return (
-      <div className="search-bar form-inline">
-        <form id="tfnewsearch" method="get" action="http://www.google.com">
-          <p><input type="text" placeholder="Type your search here"/></p>
-          <p><input type="submit" value="search" class="tfbutton"/></p>  
+const Search = ({handleChange}) => (
+      <div className="searchbar">
+        <form>
+          <p><input type="text" placeholder="Type your search here" onChange={handleChange}/></p>
         </form>
-        <div class="tfclear">
-        </div>      
       </div>
-    );
-  }
-}
+)
 
 export default Search;

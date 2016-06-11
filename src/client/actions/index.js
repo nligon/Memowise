@@ -56,7 +56,7 @@ export const fetchCard = (deckId) => {
 export const startPlay = (cardId, deckId) => ({ type: types.START_PLAY, data: { cardId, deckId } });
 export const flipCard = () => ({ type: types.FLIP_CARD });
 export const savePlay = (play, rating) => {
-  const payload = JSON.stringify({ ...play, rating });
+  const payload = JSON.stringify({...play, rating });
 
   return dispatch => (
     fetch(`${url}/api/play`, {
@@ -72,3 +72,5 @@ export const savePlay = (play, rating) => {
     .catch(err => dispatch(failedRequest(err)))
   );
 };
+
+export const searchinput = userinput => ({type: types.UPDATEINPUT, data: userinput})
