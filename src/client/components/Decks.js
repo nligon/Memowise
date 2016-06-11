@@ -15,7 +15,7 @@ const Decks = ({ decks, handleChange, searchinput }) => (
       <div className="card-columns">  
         {decks.map(
           (item, idx) => {
-            if (item.name === searchinput) {
+            if (item.name.includes(searchinput)) {
              return <DeckItem key={idx} deck={item} />
             }
           }
